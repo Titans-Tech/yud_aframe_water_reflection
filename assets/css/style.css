@@ -1,0 +1,154 @@
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333333;
+  text-align: left;
+  background-color: #fff;
+}
+
+.btn{
+  font-size: 20px;
+  width: auto;
+}
+
+.btn-lg{
+  font-size: 22px;
+}
+
+.modal-content {
+  border: none;
+  position: relative;
+  padding: 40px 30px 30px 30px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  background: #333;
+  -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+
+.modal-content .modal-header {
+    padding: 0;
+    border: none
+}
+
+.modal-content h5 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.modal-content p{
+  font-size: 12px;
+}
+
+.modal-content button.close {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  font-size: 30px;
+  margin: 0;
+  width: 36px;
+  height: 36px;
+  z-index: 1;
+  text-shadow: none;
+  border: 0;
+  background: rgba(0, 0, 0, 0.1)
+}
+
+.modal-content .btn {
+  font-weight: 500;
+  height: 45px;
+}
+
+.logo-modal{
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 5px;
+}
+
+.bg-blur-dark{
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.bg-blur-dark .modal-content,
+.bg-blur-dark .modal-body{
+  background: transparent !important;
+  background-color: transparent !important;
+  height: 100%;
+}
+
+
+.bg-blur-dark .modal-body{
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Ensure it appears above other content */
+  background-color: rgba(0, 0, 0, 0.45); /* Background color */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.45); /* Light grey */
+  border-top: 4px solid #cfcfcf; /* Blue */
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  animation: spin 2s linear infinite; /* Spin animation */
+}
+
+@keyframes sound {
+  0% {
+      height: 3px;
+      opacity: .35
+  }
+
+  to {
+      height: 24px;
+      opacity: 1
+  }
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg)
+  }
+    100% { transform: rotate(360deg)
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Aframe Water with Reflection"/>
+    <meta itemprop="name" content="Aframe Water with Reflection"/>
+    <meta itemprop="description" content="Aframe Water with Reflection"/>
+    <meta itemprop="image" content="./assets/images/favicon_dely.png"/>
+    <meta property="og:url" content="./"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Aframe Water with Reflection"/>
+    <meta property="og:description" content="Aframe Water with Reflection"/>
+    
+    <title>Aframe Water with Reflection</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- AFRAME -->
+    <script src="./assets/js/aframe.min.js"></script>
+
+    <!-- AFRAME WATER LIB -->
+    <script src="./assets/js/Refractor.js"></script>
+    <script src="./assets/js/Reflector.js"></script>
+    <script src="./assets/js/Water.js"></script>
+
+    <!-- OTHER LIB -->
+    <script src="./assets/js/aframe-environment-component.min.js"></script>
+    <script src="./assets/js/aframe-orbit-controls.min.js"></script>
+    <script src="./assets/js/aframe-particle-system-component.min.js"></script>
+    <script src="./assets/js/rotation-handler.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    </script>
+  </head>
+  <body>
+    <a-scene cursor="rayOrigin: mouse" loading-screen="dotsColor: #ffffff; backgroundColor: #ffffff"  renderer="colorManagement: true; physicallyCorrectLights: true; sortTransparentObjects: false;" light="defaultLightsEnabled: false" environment="preset: forest; dressing: none; groundTexture: walkernoise; gridColor: #15383c; groundColor: #454f46; groundColor2: #223f2b; skyType: gradient; skyColor: #87ceeb; horizonColor: #d1d3bb; ground: none; groundYScale: 5; fog: 0;" device-orientation-permission-ui="enabled: false">
+
+      <a-entity position="-27.14865 92.22345 -15" particle-system="preset: default; size: 0.5; accelerationSpread: 10 0 1; color: #708391, #708391; opacity: 0.5; velocityValue: 20 5 0; particleCount: 200000; texture: ./assets/images/rain.png"></a-entity>
+
+      <a-box width="0.2" height="0.2" depth="18" position="0 4.5 0" visible="false" smooth-rotation>
+        <a-entity id="camera" camera position="0 0 9"></a-entity>
+      </a-box>
+
+      <a-plane id="water" position="0 1 0" rotation="-90 0 0" width="300" height="300" water="color: #cad3cc; textureWidth: 512; textureHeight: 512; flowDirectionX: 0.01; flowDirectionY: -0.08; flowSpeed: 0.03"></a-plane>
+      <a-plane position="0 0.1 0" rotation="-90 0 0" width="300" height="300" color="#15434a" material="shader: flat;"></a-plane>
+
+      <a-box width="2" depth="2" height="2" color="red" position="0 3 0"></a-box>
+
+      <a-light light="intensity: 2.8; target: .box-1, .box-3; color: #ffffff; type: directional;" position="-7.097 13.57 4.078"></a-light>
+      <a-light light="intensity: 2.8; target: .box-2, .box-4; color: #ffffff; type: directional;" position="7.097 13.57 4.078"></a-light>
+    </a-scene>
+    
+  </body>
+</html>
