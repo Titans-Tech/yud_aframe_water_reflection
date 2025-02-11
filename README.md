@@ -1,6 +1,6 @@
 # Aframe Water With Reflection
 
-![alt text]([http://url/to/img.png](https://github.com/Titans-Tech/yud_aframe_water_reflection/blob/27700705b991567e42222dd740b333df62cf2dd8/assets/images/ss.png)])
+![alt text](http://url/to/img.png](https://github.com/Titans-Tech/yud_aframe_water_reflection/blob/27700705b991567e42222dd740b333df62cf2dd8/assets/images/ss.png))
 
 ## How to use
 
