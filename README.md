@@ -36,5 +36,6 @@
   textureWidth: (type: integer, default: 512)
   textureHeight: (type: integer, default: 512)
   flowDirectionX: (type: integer, default: 0.0)
-  flowDirectionY: (type: integer, default: -0.08)flowSpeed: type: (integer, default: 0.02)
+  flowDirectionY: (type: integer, default: -0.08)
+  flowSpeed: type: (integer, default: 0.02)
 ```
